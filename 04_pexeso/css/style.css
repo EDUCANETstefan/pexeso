@@ -1,0 +1,24 @@
+body {
+    background-image: url("photos/994479.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#mainblock {
+    background-color: rgba(212, 6, 119, 0.6);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: solid 2px;
+
+}
+
+#pexeso {
+    text-align: start;
+    margin: 30.5%;
+
+}
+
+.icon
