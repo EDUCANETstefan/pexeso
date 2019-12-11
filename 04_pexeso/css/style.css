@@ -18,7 +18,11 @@ body {
 #pexeso {
     text-align: start;
     margin: 30.5%;
-
+    font-size: 100px;
+    border: solid 5px;
+    backdrop-filter: blur(50%);
 }
 
-.icon
+.item {
+    display: inline-block;
+}

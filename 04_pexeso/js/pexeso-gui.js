@@ -5,7 +5,7 @@ export class PexesoGUI {
 
     constructor(container, rows, columns, bombs = null) {
         this.container = container;
-        this.game = new Pexeso(rows, columns, ["😀", "☺️", "😀", "☺️", "🎅🏻", "🎅🏻"]);
+        this.game = new Pexeso(["🐻", "🐻️", "🐢", "🐢", "🦊", "🦊", "🐳", "🐳", "🦉", "🦉"]);
     }
 
 
@@ -19,20 +19,24 @@ export class PexesoGUI {
         const container = document.createElement('div');
         const header = document.createElement('h2');
         const smallHeader  = document.createElement('h3');
-        for (let i = 0; i < length; i++) {
-            
+
+        for (let i = 0; i < this.game.game.length; i++) {
+            const item = document.createElement('div');
+            item.className = "item";
+            item.innerText = this.game.game[i];
+            container.appendChild(item);
+
+            //this.game.selectedTile(i);
+
         }
 
         this.game.fields;
 
 
-
-        container.appendChild(abc);
-
-
         this.container.appendChild(container)
 
     }
+    
 }
 
 
